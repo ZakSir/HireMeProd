@@ -1,1 +1,9 @@
-{}}sadfasdfasdfsad zsdfasdfasdf
+{ 
+  "$schema": "https://raw.githubusercontent.com/ZakSir/HireMe/master/resumeSchema.json",
+  "candidate": {
+    "name": {
+      "givenName" :"Danni",
+      "surname": "Fargo"
+    }
+}
+}
