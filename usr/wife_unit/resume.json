@@ -4,6 +4,14 @@
     "name": {
       "givenName" :"Danni",
       "surname": "Fargo"
-    }
+    },
+     "email": "hiredannifargo@gmail.com",
+    "phone": 4252688126,
+    "hobbies": [
+      "Welding (GMAW, GTAW)",
+      "Borosilicate Flameworking",
+      "Piano",
+      "Winning"
+    ]
 }
 }
