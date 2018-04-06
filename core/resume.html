@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Yes I really submitted my resume for SEO -->
+    <meta name="google-site-verification" content="<!-- google.site.verify -->" />
+    <meta name="msvalidate.01" content="<!-- bing.site.verify -->" />
+    <meta name="description" content="<!-- meta.description -->" />
+    <meta name="keywords" content="<!-- meta.keywords -->" />
+    <title>Hire <!-- page.fullName --></title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+    <link rel="stylesheet" href="//hire.azureedge.net/hireme/<!-- system.user -->/resume.css?commit=<!-- COMMITHERE -->" />
+    
+    <!-- It is always good to know how popular you are :D -->
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (a) {
+            function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c
+        }({
+            instrumentationKey: "3866c362-dc29-40df-bfa3-83b1c04477f5"
+        });
+
+        window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/json.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <header>
+        <h1 class="title formatted">resume.json</h1>
+    </header>
+    <article>
+        <div id="tabbed-container">
+            <div id="tabs">
+                <div id="json-label" data-bind="css: { 'in-use-format': visiblePage() === 0, 'format-label' : true }, click: showJson">
+                    JSON
+                </div>
+                <div id="formatted-label" data-bind="css: { 'in-use-format': visiblePage() === 1, 'format-label' : true }, click: showHtml">
+                    Formatted
+                </div>
+            </div>
+        </div> <!-- foo2 -->
+        <div id="raw-json-top" class="resume-container" style="display: none;" data-bind="visible: visiblePage() === 0">
+            <!-- DATAHERE -->
+        </div>
+        <div id="formatted-top" class="resume-container" style="display: none;" data-bind="visible : visiblePage() === 1">
+            <div id="formatted-name">
+                <h2 id="formatted-candidate-name" class="section-header">
+                    <span id="formatted-candidate-name-given-name" data-bind="text: candidate.name.givenName"></span><span id="formatted-candidate-name-space">&nbsp;</span><span id="formatted-candidate-name-sur-name" data-bind="text: candidate.name.surname"></span>
+                </h2>
+                <p id="formatted-candidate-sub-info">
+                    <span id="formatted-candidate-location" data-bind="text: candidate.location"></span>
+                    <span class="decoration candidate-info-seperator"> | </span>
+                    <a id="formatted-candidate-email" data-bind="attr: { href: candidate.emailhref, title: candidate.email}, text: candidate.email "></a>
+                    <span class="decoration candidate-info-seperator"> | </span>
+                    <a id="formatted-candidate-phone-link" href="phone" data-bind="attr: { href: candidate.phoneHref }"><span data-bind="text: candidate.phoneDisplay"></span></a>
+                </p>
+            </div>
+            <div id="formatted-objective" class="candidate-info">
+                <h2 class="section-header">Objective</h2>
+                <p data-bind="text: objective"></p>
+            </div>
+            <div id="formatted-skills-container">
+                <h2 class="section-header">Skills</h2>
+                <div id="formatted-skills" class="skills" data-bind="foreach: proficiencies">
+                    <h3>
+                        <span class="formatted-skills-first-skill-name" data-bind="text: firstSkill; "></span>
+                    <span class="formatted-skills-container" data-bind="ifnot: skillName.length < 2">(<span class="formatted-skill-list" data-bind="foreach: skillName"><span class="formatted-skill-name" data-bind="text: $data"></span><span data-bind="ifnot: (($parent.skillName.length - 1) === $index())">, </span></span>)</span>
+                </h3>
+                    <p class="formatted-skill-level">
+                        <span class="formatted-skill-level-decorator-level">level: </span>
+                        <span class="formatted-skill-level-name" data-bind="text: level"></span>
+                        <span class="formatted-skill-at"> @ </span>
+                        <span data-bind="text: yearsOfExperience"></span>
+                        <span class="formatted-skill-decoration-years"> years</span>
+                    </p> 
+                    <p class="formatted-skill-favorites" data-bind="foreach: favoriteActivities">
+                        <span data-bind="text: $data"></span><span data-bind="ifnot: (($parent.favoriteActivities.length - 1) === $index())">, </span>
+                    </p>
+                </div>
+            </div>
+            <div id="formatted-experience-container">
+                <h2 id="formatted-experience-header" class="section-header">Experience</h2>
+                <div id="formatted-experience" data-bind="foreach: experience">
+                    <div class="formatted-experience-instance-container">
+                        <div class="formatted-company-header">
+                            <h3 class="formatted-company-name">
+                                <span class="formatted-company-name-primary" data-bind="text: company"></span>
+                                <span class="decoration formatted-company-name-contractor-at-decoration" data-bind="if: contractorToVisible"> @ </span>
+                                <span class="formatted-company-name-contractor-to" data-bind="text: contractorToText"></span>
+                            </h3>
+                            <div class="formatted-title-and-date-alignment-container">
+                                <div class="formatted-title-and-date-container">
+                                    <p class="formatted-title-row">
+                                        <span class="formatted-job-title" data-bind="text: title"></span>
+                                    </p>
+                                    <p class="formatted-date-row" data-bind="visible: $parent.dateDisplay() === 0, click: $parent.toggleDateDisplay">
+                                        <span class="formatted-job-start-date-month" data-bind="text: startDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-start-date-year" data-bind="text: startDate.year"></span>
+                                        <span class="decoration formatted-job-title-date-range-seperator"> - </span>
+                                        <span data-bind="ifnot: endDate === null ">
+                                            <span class="formatted-job-end-date-month" data-bind="text: endDate.month"></span><span class="decoration formatted-job-title-date-range-seperator-slash">/</span><span class="formatted-job-end-date-year" data-bind="text: endDate.year"></span>
+                                        </span>
+                                        <span class="current-job" data-bind="if: endDate === null ">
+                                            Current
+                                        </span>
+                                    </p>
+                                    <p class="formatted-date-row" data-bind="visible: $parent.dateDisplay() === 1, click: $parent.toggleDateDisplay">
+                                        <span class="formatted-date-range" data-bind="text: dateRangeDisplay"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="breaker"></div>
+                        </div>
+
+
+                        <p class="formatted-accomplishments">
+                            <h4>Accomplishments</h4>
+                            <ul>
+                                <!-- ko foreach: dutiesAndAccomplishments -->
+                                    <li data-bind="text: $data"></li>
+                                <!-- /ko -->
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        commit:
+        <a href="//github.com/ZakSir/HireMeProd/commit/<!-- COMMITHERE -->" onClick="openGitHubcommit()">
+            <!-- COMMITHERE -->
+        </a>
+        <span class="downloads">
+            <br /> download:
+            <a onClick="openRawFile('resume.json')" style="cursor: pointer;">resume.json</a>
+        </span>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+
+    <script src="//hire.azureedge.net/hireme/<!-- system.user -->/resume.js?commit=<!-- COMMITHERE -->"></script>
+</body>
+
+</html>

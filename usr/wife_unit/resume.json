@@ -1,0 +1,74 @@
+{ 
+  "$schema": "https://raw.githubusercontent.com/ZakSir/HireMe/master/resumeSchema.json",
+  "candidate": {
+    "name": {
+      "givenName" :"Danni",
+      "surname": "Fargo"
+    },
+     "email": "hiredannifargo@gmail.com",
+    "phone": 4252688126,
+    "hobbies": [
+      "Welding (GMAW, GTAW)",
+      "Borosilicate Flameworking",
+      "Piano",
+      "Winning"
+    ],
+    "location": "Renton, WA"
+},
+"proficiencies": [
+    {
+        "skillName": [ "Skill A" ],
+        "level": "master",
+        "yearsOfExperience": 7,
+        "favoriteActivities": [ "Quick bit", "About", "Stuff", "And Things" ]
+    },
+    {
+        "skillName": [ "csharp" ],
+        "level": "master",
+        "yearsOfExperience": 7,
+        "favoriteActivities": [ "library code", "refactoring", "automation", "deployment" ]
+    }
+],
+"experience": [
+    {
+        "company": "Microsoft",
+        "title": "Software Engineer II",
+        "team": "Enterprise Cloud / Enterprise Analytics and Tools",
+        "startDate": {
+          "year": 2014,
+          "month": 4
+        },
+        "endDate": null,
+        "dutiesAndAccomplishments": [
+          "Designed end to end business automation solutions.",
+          "Created custom MediaWiki private deployment, with minimal maintenance and high automation, eliminating legacy documentation systems and headcount.",
+          "Reduced headcount with self-service automation engine.",
+          "Drove DevOps culture across organization, increasing resiliency of live site products.",
+          "Created self-service team engagement application, eliminating the need for engineering hours.",
+          "Developed rapid solutions using Azure to enable GTM strategies to be piloted quickly."
+        ]     
+      },
+      {
+        "company": "Microsoft",
+        "title": "Software Engineer I",
+        "team": "Bing Offers",
+        "startDate": {
+          "year" : 2013,
+          "month" : 4
+        },
+        "endDate": {
+          "year": 2014,
+          "month": 4
+        },
+        "dutiesAndAccomplishments": [
+          "Implemented RSS feed SEO system for massive offers database.",
+          "Created internal API platform to allow Bing Search to deeply learn about offers.",
+          "Implemented design changes to Bing offers site to improve look and feel.",
+          "Implemented custom automated deployment for azure from Team Foundation XAML build system.",
+          "Built MSTest drivable harness for CasperJs. Allowing per-test visibility for rapid development.",
+          "Developed and optimized custom builds reducing build times by 80%."
+        ]
+      }
+],
+"objective": "Winning! among other things and stuff."
+}

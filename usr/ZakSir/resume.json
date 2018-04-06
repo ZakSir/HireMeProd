@@ -1,0 +1,184 @@
+{ 
+    "$schema": "https://raw.githubusercontent.com/ZakSir/HireMe/master/resumeSchema.json",
+    "candidate": {
+      "name": {
+        "givenName" :"Zak",
+        "surname": "Fargo  "
+      },
+      "location": "Renton, Washington",
+      "email": "hirezakfargo@gmail.com",
+      "phone": 4259496380,
+      "hobbies": [
+        "Welding (GMAW, GTAW)",
+        "Borosilicate Flameworking",
+        "Piano",
+        "Winning"
+      ]
+    },
+    "objective": "Working on a fast-paced, challenging team to push the boundaries of the cloud world to its limits. I hope to help deliver the dream of ambient intelligence to the world. ",
+    "proficiencies": [
+      {
+        "skillName": [ "csharp" ],
+        "level": "master",
+        "yearsOfExperience": 7,
+        "favoriteActivities": [ "library code", "refactoring", "automation", "deployment" ]
+      },
+      { 
+        "skillName": [ "Windows", "Windows Server", "PowerShell" ],
+        "level": "journeyman",
+        "yearsOfExperience": 10,
+        "favoriteActivities": [ "Environment Design", "Active Directory" ]
+      },
+      {
+        "skillName": [ "UX : XAML / WPF" ],
+        "level": "journeyman",
+        "yearsOfExperience" : 3,
+        "favoriteActivities": [ "Ergonomic Design", "Delight moments", "Consistency" ]
+      },
+      {
+        "skillName": [ "Html5", "CSS3", "Javascript", "TypeScript"],
+        "level": "journeyman",
+        "yearsOfExperience": 5,
+        "favoriteActivities": [ "Single Page Applications", "Api Design", "Performance" ]
+      },
+      {
+        "skillName": [ "Azure", "Windows Azure" ],
+        "level": "journeyman",
+        "yearsOfExperience": 4,
+        "favoriteActivities": [ "ApplicationInsights", "Storage", "HyperScale", "Analytics", "Service Design"]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Microsoft",
+        "title": "Software Engineer II",
+        "team": "Enterprise Cloud / Enterprise Analytics and Tools",
+        "startDate": {
+          "year": 2014,
+          "month": 4
+        },
+        "endDate": null,
+        "dutiesAndAccomplishments": [
+          "Designed end to end business automation solutions.",
+          "Created custom MediaWiki private deployment, with minimal maintenance and high automation, eliminating legacy documentation systems and headcount.",
+          "Reduced headcount with self-service automation engine.",
+          "Drove DevOps culture across organization, increasing resiliency of live site products.",
+          "Created self-service team engagement application, eliminating the need for engineering hours.",
+          "Developed rapid solutions using Azure to enable GTM strategies to be piloted quickly."
+        ]     
+      },
+      {
+        "company": "Microsoft",
+        "title": "Software Engineer I",
+        "team": "Bing Offers",
+        "startDate": {
+          "year" : 2013,
+          "month" : 4
+        },
+        "endDate": {
+          "year": 2014,
+          "month": 4
+        },
+        "dutiesAndAccomplishments": [
+          "Implemented RSS feed SEO system for massive offers database.",
+          "Created internal API platform to allow Bing Search to deeply learn about offers.",
+          "Implemented design changes to Bing offers site to improve look and feel.",
+          "Implemented custom automated deployment for azure from Team Foundation XAML build system.",
+          "Built MSTest drivable harness for CasperJs. Allowing per-test visibility for rapid development.",
+          "Developed and optimized custom builds reducing build times by 80%."
+        ]
+      },
+      {
+        "company": "Xtreme Consulting Group",
+        "contractorTo": "Microsoft",
+        "title": "Service Engineer",
+        "team": "Enterprise Cloud / Incident Response",
+        "startDate": {
+          "year": 2011,
+          "month": 7
+        },
+        "endDate": {
+          "year": 2013,
+          "month" : 4
+        },
+        "dutiesAndAccomplishments": [
+          "Provided Tier 3 break-fix support for Enterprise Exchange Deployments.",
+          "Researched and provided technical documentation for Exchange troubleshooting.",
+          "Developed database interface software in XAML and C# used by entire operations organization.",
+          "Deployed several database interoperability applications using the WCF framework and Microsoft SQL.",
+          "Created and delivered technical use training to end users of line of business applications.", 
+          "Created a multi-database ticket tracking and creation system using XAML, SQL, WCF, C# and ASP.NET.",
+          "Created portals to allow cross team collaboration and tracking with custom database system.",
+          "Worked to reduce headcount per seat resulting in substantial operating cost reductions.",  
+          "Deployed several automation engines removing repetitive tasks from end users."
+        ]
+      },
+      {
+        "company": "Insight Global",
+        "contractorTo": "Microsoft",
+        "title": "Incident Manager",
+        "team": "BPOS Dedicated (Now Office 365 Enterprise Cloud)",
+        "startDate": {
+          "year" : 2010,
+          "month" : 6
+        },
+        "endDate": {
+          "year" : 2011,
+          "month" : 7
+        },
+        "dutiesAndAccomplishments": [
+          "Managed Major Incidents across the Microsoft Office 365 Environment.",
+          "Worked to ensure SLA is met for all customers.",
+          "Responsible for communicating incident Details to Microsoft executives.",
+          "Worked with operations teams to restore services during outages.",
+          "Managed major incident progression for all cloud services including Exchange, SharePoint, Lync (now Teams) and Live Meeting.",
+          "Responsible for beginning the problem management process for issues that slowed service restoration."
+        ] 
+      },
+      {
+        "company": "VMC Consulting",
+        "title": "Tier II Support Engineer",
+        "team": "Business Productivity Online Suite (Now Office 365)",
+        "startDate": 
+        {
+          "year" : 2010,
+          "month" : 1
+        },
+        "endDate": {
+          "year" : 2010,
+          "month" :6
+        },
+        "dutiesAndAccomplishments": [
+          "Worked with a team of over 70 agents to provide product support for the Microsoft Online Services platform.", 
+          "Troubleshot Microsoft Exchange Online, SharePoint Online, LiveMeeting Online and Office Communicator Online (now Teams).", 
+          "Created customer facing documentation personalized for each customer.", 
+          "Troubleshot and fixed issues with customer configurations of software.", 
+          "Delivered outstanding customer service to subscribers.", 
+          "Worked with exchange management console and Blackberry Enterprise Manager.", 
+          "Ensured issues were handled and met the SLA to customers.", 
+          "Worked with customers to support setup and configuration of the Microsoft Online Services.", 
+          "Provided support for issues ranging of DNS setup to complex co-existence and email migration issues.", 
+          "Created tools for Support Engineers that saved hours of wasted time per week.", 
+          "Provided 24/7/365 support to clients.", 
+          "Worked with tickets to provide support to incident resolution.", 
+          "Worked with second tier support to provide requested changes to the customer."
+        ]
+      }
+    ],
+    "education": {
+      "highestDegreeObtained": "hs",
+      "degrees": [],
+      "schools" : [
+        {
+          "name" : "Apache Junction High School",
+          "degreeObtained" : "High School Diploma",
+          "major": null
+        },
+        {
+          "name" : "Mesa Community College",
+          "degreeObtained": null,
+          "major" : "Computer Networking"
+        }
+      ]
+    }
+  }
