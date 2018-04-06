@@ -1,43 +1,43 @@
 ﻿{
   "type": "object",
   "$schema": "http://json-schema.org/draft-03/schema",
-  "id": "https://hiremeprod.local/schema/resume",
+  "id": "https://hire-me-prod.local/schema/resume",
   "required": false,
   "properties": {
     "candidate": {
       "type": "object",
-      "id": "https://hiremeprod.local/schema/resume/candidate",
+      "id": "https://hire-me-prod.local/schema/resume/candidate",
       "required": true,
       "properties": {
         "location": {
           "type": "string",
-          "id": "https://hiremeprod.local/schema/resume/candidate/location",
+          "id": "https://hire-me-prod.local/schema/resume/candidate/location",
           "required": true
         },
         "email": {
           "type": "string",
-          "id": "https://hiremeprod.local/schema/resume/candidate/email",
+          "id": "https://hire-me-prod.local/schema/resume/candidate/email",
           "required": true
         },
         "phone": {
           "type": "number",
-          "id": "https://hiremeprod.local/schema/resume/candidate/phone",
+          "id": "https://hire-me-prod.local/schema/resume/candidate/phone",
           "required": true
         },
         "name": {
           "type": "object",
-          "id": "https://hiremeprod.local/schema/resume/candidate/name",
+          "id": "https://hire-me-prod.local/schema/resume/candidate/name",
           "required": true,
           "properties": {
             "givenName" : {
               "type": "string",
-              "id": "https://hiremeprod.local/schema/resume/candidate/name/givenName",
+              "id": "https://hire-me-prod.local/schema/resume/candidate/name/givenName",
               "required": true,
               "description": "The given name of the candidate"
             },
             "surname" : {
               "type": "string",
-              "id" : "https://hiremeprod.local/schema/resume/candidate/name/surname",
+              "id" : "https://hire-me-prod.local/schema/resume/candidate/name/surname",
               "required":true,
               "description": "The surname (last name) of the candidate"
             }
@@ -45,11 +45,11 @@
         },
         "hobbies": {
           "type": "array",
-          "id": "https://hiremeprod.local/schema/resume/candidate/hobbies",
+          "id": "https://hire-me-prod.local/schema/resume/candidate/hobbies",
           "required": true,
           "items": {
             "type": "string",
-            "id": "https://hiremeprod.local/schema/resume/candidate/hobbies/0",
+            "id": "https://hire-me-prod.local/schema/resume/candidate/hobbies/0",
             "required": false
           }
         }
@@ -57,92 +57,92 @@
     },
     "education": {
       "type": "object",
-      "id": "https://hiremeprod.local/schema/resume/education",
+      "id": "https://hire-me-prod.local/schema/resume/education",
       "required": false,
       "properties": {
         "degrees": {
           "type": "array",
-          "id": "https://hiremeprod.local/schema/resume/education/degrees",
+          "id": "https://hire-me-prod.local/schema/resume/education/degrees",
           "required": false
         },
         "highestDegreeObtained": {
           "type": "string",
-          "id": "https://hiremeprod.local/schema/resume/education/highestDegreeObtained",
+          "id": "https://hire-me-prod.local/schema/resume/education/highestDegreeObtained",
           "required": false
         }
       }
     },
     "experience": {
       "type": "array",
-      "id": "https://hiremeprod.local/schema/resume/experience",
+      "id": "https://hire-me-prod.local/schema/resume/experience",
       "required": true,
       "items": {
         "type": "object",
-        "id": "https://hiremeprod.local/schema/resume/experience/0",
+        "id": "https://hire-me-prod.local/schema/resume/experience/0",
         "required": false,
         "properties": {
           "dutiesAndAccomplishments": {
             "type": "array",
-            "id": "https://hiremeprod.local/schema/resume/experience/0/dutiesAndAccomplishments",
+            "id": "https://hire-me-prod.local/schema/resume/experience/0/dutiesAndAccomplishments",
             "required": true,
             "items": {
               "type": "string",
-              "id": "https://hiremeprod.local/schema/resume/experience/0/dutiesAndAccomplishments/0",
+              "id": "https://hire-me-prod.local/schema/resume/experience/0/dutiesAndAccomplishments/0",
               "required": false
             }
           },
           "endDate": {
             "type": "object",
-            "id": "https://hiremeprod.local/schema/resume/experience/0/endDate",
+            "id": "https://hire-me-prod.local/schema/resume/experience/0/endDate",
             "required": true,
             "properties" : {
               "year" : {
                 "type" : "number",
-                "id" : "https://hiremeprod.local/schema/resume/experience/0/endDate/year",
+                "id" : "https://hire-me-prod.local/schema/resume/experience/0/endDate/year",
                 "required": true
               },
               "month" : {
                 "type" : "number",
-                "id" : "https://hiremeprod.local/schema/resume/experience/0/endDate/month",
+                "id" : "https://hire-me-prod.local/schema/resume/experience/0/endDate/month",
                 "required": true
               }
             }
           },
           "startDate": {
             "type": "object",
-            "id": "https://hiremeprod.local/schema/resume/experience/0/startDate",
+            "id": "https://hire-me-prod.local/schema/resume/experience/0/startDate",
             "required": true,
             "properties" : {
               "year" : {
                 "type" : "number",
-                "id" : "https://hiremeprod.local/schema/resume/experience/0/startDate/year",
+                "id" : "https://hire-me-prod.local/schema/resume/experience/0/startDate/year",
                 "required": true
               },
               "month" : {
                 "type" : "number",
-                "id" : "https://hiremeprod.local/schema/resume/experience/0/startDate/month",
+                "id" : "https://hire-me-prod.local/schema/resume/experience/0/startDate/month",
                 "required": true
               }
             }
           },
           "title": {
             "type": "string",
-            "id": "https://hiremeprod.local/schema/resume/experience/0/title",
+            "id": "https://hire-me-prod.local/schema/resume/experience/0/title",
             "required": true
           },          
           "team": {
             "type": "string",
-            "id": "https://hiremeprod.local/schema/resume/experience/0/team",
+            "id": "https://hire-me-prod.local/schema/resume/experience/0/team",
             "required": true
           },          
           "company": {
             "type": "string",
-            "id": "https://hiremeprod.local/schema/resume/experience/0/company",
+            "id": "https://hire-me-prod.local/schema/resume/experience/0/company",
             "required": true
           },
           "contractorTo":{
             "type": "string",
-            "id": "https://hiremeprod.local/schema/resume/experience/0/contractorTo",
+            "id": "https://hire-me-prod.local/schema/resume/experience/0/contractorTo",
             "required" : false
           }
         }
@@ -150,46 +150,46 @@
     },
     "objective": {
       "type": "string",
-      "id": "https://hiremeprod.local/schema/resume/objective",
+      "id": "https://hire-me-prod.local/schema/resume/objective",
       "required": false
     },
     "proficiencies": {
       "type": "array",
-      "id": "https://hiremeprod.local/schema/resume/proficiencies",
+      "id": "https://hire-me-prod.local/schema/resume/proficiencies",
       "required": false,
       "items": {
         "type": "object",
-        "id": "https://hiremeprod.local/schema/resume/proficiencies/0",
+        "id": "https://hire-me-prod.local/schema/resume/proficiencies/0",
         "required": false,
         "properties": {
           "favoriteActivities": {
             "type": "array",
-            "id": "https://hiremeprod.local/schema/resume/proficiencies/0/favoriteActivities",
+            "id": "https://hire-me-prod.local/schema/resume/proficiencies/0/favoriteActivities",
             "required": false,
             "items": {
               "type": "string",
-              "id": "https://hiremeprod.local/schema/resume/proficiencies/0/favoriteActivities/0",
+              "id": "https://hire-me-prod.local/schema/resume/proficiencies/0/favoriteActivities/0",
               "required": false
             }
           },
           "level": {
             "type": "string",
-            "id": "https://hiremeprod.local/schema/resume/proficiencies/0/level",
+            "id": "https://hire-me-prod.local/schema/resume/proficiencies/0/level",
             "required": false
           },
           "skillName": {
             "type": "array",
-            "id": "https://hiremeprod.local/schema/resume/proficiencies/0/skillName",
+            "id": "https://hire-me-prod.local/schema/resume/proficiencies/0/skillName",
             "required": false,
             "items": {
               "type": "string",
-              "id": "https://hiremeprod.local/schema/resume/proficiencies/0/skillName/0",
+              "id": "https://hire-me-prod.local/schema/resume/proficiencies/0/skillName/0",
               "required": false
             }
           },
           "yearsOfExperience": {
             "type": "number",
-            "id": "https://hiremeprod.local/schema/resume/proficiencies/0/yearsOfExperience",
+            "id": "https://hire-me-prod.local/schema/resume/proficiencies/0/yearsOfExperience",
             "required": false
           }
         }
