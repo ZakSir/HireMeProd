@@ -7,13 +7,13 @@ function openRawFile(drilldown)
 function openGitHubCommit()
 {
     appInsights.trackEvent("githubcommit", { commit: '<!-- COMMITHERE -->' });
-    window.open("https://github.com/ZakSir/HireMe/commit/<!-- COMMITHERE -->", "_blank");
+    window.open("https://github.com/ZakSir/HireMeProd/commit/<!-- COMMITHERE -->", "_blank");
 }
 
 function openRawGitHubFile(fileName)
 {
     appInsights.trackEvent("githubraw", {commit: '<!-- COMMITHERE -->', fileName: fileName});
-    window.open("https://raw.githubusercontent.com/ZakSir/HireMe/<!-- COMMITHERE -->/" + fileName);
+    window.open("https://raw.githubusercontent.com/ZakSir/HireMeProd/<!-- COMMITHERE -->/" + fileName);
 }
 
 console.log("Working against commit <!-- COMMITHERE -->");
